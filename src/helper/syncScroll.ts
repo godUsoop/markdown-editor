@@ -17,5 +17,5 @@ const syncScroll = (
   
     const scrollRatio = source.scrollTop / (source.scrollHeight - source.clientHeight);
     target.scrollTop = scrollRatio * (target.scrollHeight - target.clientHeight);
-  };
+};
 export default syncScroll;

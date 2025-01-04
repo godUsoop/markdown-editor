@@ -7,8 +7,9 @@ import syncScroll from "./helper/syncScroll";
 
 const App = () => {
 	const [markdown, setMarkdown] = useState<string>(
-		"# Welcome to markdown editor!\n\nThis is your first Markdown file."
+		"# Welcome to markdown editor!\n\nThis is your first Markdown file.\n\n# Title 1\n## Subtitle\n\nThis is **bold text**.\n- Item 1\n- Item 2"
 	);
+
 	const editorRef = useRef<HTMLTextAreaElement>(null);
 	const previewRef = useRef<HTMLDivElement>(null);
 	
