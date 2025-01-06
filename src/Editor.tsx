@@ -10,13 +10,13 @@ interface EditorProps {
 const Editor = ({editorRef, markdown, setMarkdown, syncEditorToPreview}: EditorProps) => {
     return (
         <div className="editor">
-          <textarea
-            ref={editorRef}
-            className="markdown-input"
-            value={markdown}
-            onChange={(e) => setMarkdown(e.target.value)}
-            onScroll={syncEditorToPreview}
-          />
+            <textarea
+                ref={editorRef}
+                className="markdown-input"
+                value={markdown}
+                onChange={(e) => setMarkdown(e.target.value)}
+                onScroll={syncEditorToPreview}
+            />
         </div>
     )
 }
