@@ -19,7 +19,7 @@ const App = () => {
 		"More text with **bold** formatting and list item:\n" +
 		"- List item 1\n" +
 		"- List item 2"
-);
+	);
 
 	const editorRef = useRef<HTMLTextAreaElement>(null);
 	const previewRef = useRef<HTMLDivElement>(null);
